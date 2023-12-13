@@ -1,0 +1,47 @@
+create table users (
+	id int primary key auto_increment,
+    name varchar(50),
+	email varchar(150),
+    phone varchar(20),
+    created_at datetime,
+    update_at datetime
+)
+
+create table category (
+	id int primary key auto_increment,
+    title varchar(50),
+    created_at datetime,
+    update_at datetime
+)
+
+create table datail_category (
+	id int primary key auto_increment,
+    title varchar(50),
+    created_at datetime,
+    update_at datetime,
+    category_id int,
+     FOREIGN KEY (category_id) REFERENCES category(id),
+
+)
+create table albums (
+	id int,
+   url text,
+   describes varchar(100)
+)
+create table advises (
+	id int primary key auto_increment,
+    name varchar(50),
+	email varchar(150),
+    phone varchar(20),
+    address varchar(200),
+    content longtext,
+    users_id int,
+    category_id int,
+    detail_category int,
+    FOREIGN KEY (users_id) REFERENCES users(id),
+    FOREIGN KEY (category_id) REFERENCES category(id),
+    FOREIGN KEY (detail_category) REFERENCES detail_category(id),
+    created_at datetime,
+    update_at datetime
+)
+Calligraphy,	Vietnamese Calligraphy,	Arab Calligraphy,	Chinese Calligraphy

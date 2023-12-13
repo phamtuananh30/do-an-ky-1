@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+#wrapper {
+    height: auto;
+    display: flex;
+}
+#logo{
+    padding:5px 0px;
+}
+#logo img{
+    max-width: 250px;
+    height: auto;
+}
+.main-left {
+    flex: 3;
+    height: auto;
+    background-color:
+    #ffc107;
+    text-align: center;
+}
+.main-left ul {
+    padding-inline-start:0px;
+}
+.main-left ul li {
+    list-style: none;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+}
+.main-left ul li:hover {
+    border-bottom: 1px solid rgb(193, 49, 49);
+    transition: 0.5s;
+}
+.main-left ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.login-right-top {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    justify-content: flex-end;
+}
+.login-right-top a {
+    text-decoration: none;
+}
+.main-right {
+    flex: 5;
+    height: auto;
+}
+h1 {
+    font-size: 2.125rem;
+    line-height: 3rem;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+form {
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 500px;
+
+}
+input {
+    margin-bottom:20px;
+    width: 97%;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    padding-left:15px;
+    font-size:16px;
+    background-color: #F5F5F6;
+    border: none;
+}
+input:hover {
+    border: 1px solid #dd3333;
+}
+li {
+    color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 10px;
+    list-style: none;
+}
+button{
+    outline:none;
+    background-color:#dd3333;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    margin-top:20px;
+    font-size:20px;
+    font-weight: bold;
+}
+button:hover{
+    background-color:#e25151;
+}
+p {
+    color: rgba(0, 0, 0, 0.54);
+    float: right;
+}
+a {
+    color: #dd3333;
+}
